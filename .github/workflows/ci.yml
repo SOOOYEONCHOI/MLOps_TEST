@@ -39,7 +39,7 @@ jobs:
       # 파이썬 문법 에러가 있거나 정의되지 않은 이름이 있는 경우 빌드를 멈춤
       - name: Lint with flake8
         run: |
-          flake8 . --count --select=E9,F63,F7,F82 --show-source -- statistics
+          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
           # 'exit-zero'는 모든 에러를 경로로 처리
           # GitHub 에디터는 한 줄에 127자까지 보임
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
